@@ -1,0 +1,10 @@
+{
+    "index": "Introduction",
+    "frontend": "Front-End Developer",
+    "backend": "Backend Developer",
+    "fullstack": "Full-Stack Developer",
+    "devops": "DevOps Engineer",
+    "datascience": "Data Scientist",
+    "cloud": "Cloud Architect",
+    "machine": "Machine Learning Engineer"
+}

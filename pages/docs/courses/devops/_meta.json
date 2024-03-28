@@ -1,0 +1,15 @@
+{
+    "intro": 
+    {
+        "title": "Introduction to DevOps",
+        "theme": {
+          "sidebar": false
+      }
+    },
+    "syllabus": {
+        "title": "Syllabus for DevOps",
+        "theme": {
+          "sidebar": false
+      }
+   }
+}
