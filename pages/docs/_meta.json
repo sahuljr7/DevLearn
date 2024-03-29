@@ -1,8 +1,0 @@
-{
-    "--Courses": {
-      "type": "separator",
-      "title": "Courses"
-    },
-    "course_intro": "Introduction to Courses",
-    "courses": "Courses"
-  }

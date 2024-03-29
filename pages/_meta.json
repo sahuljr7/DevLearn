@@ -4,8 +4,8 @@
     "type": "page",
     "display": "hidden"
   },
-  "roadmap": {
-    "title": "Roadmap",
+  "dv": {
+    "title": "DV",
     "type": "page"
   },
   "404": {
@@ -21,13 +21,5 @@
       "timestamp": false,
       "typesetting": "article"
     }
-  },
-  "docs": {
-    "type": "page",
-    "title": "Courses"
-  },
-  "java": {
-    "type": "page",
-    "title": "Java"
   }
 }

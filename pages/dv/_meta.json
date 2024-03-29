@@ -1,0 +1,46 @@
+{
+    "index": "Getting Started",
+    "--Unit 1": {
+        "type": "separator",
+        "title": "Unit 1"
+      },
+      "unit1": "Introduction to Data Visualization",
+      "unit1_1": "Applications and Process of Data Visualization",
+      "unit1_2": "Data Processing and Transformation",
+      "unit1_3": "Basic Charts and Plots",
+      "unit1_4": "Multivariate Data Visualization",
+      "unit1_5": "Data Visualization Techniques",
+      "unit1_6": "Principles and Theories of Visualization",
+      "unit1_7": "Design Principles",
+      "unit1_8": "Chart Types",
+      "unit1_9": "Aspects of Data Patterns",
+      "--Unit 2": {
+        "type": "separator",
+        "title": "Unit 2"
+      },
+      "unit2": "Scalar and Point Visualization Techniques",
+      "unit2_1": "Vector Visualization Techniques",
+      "unit2_2": "Multidimensional Techniques",
+      "unit2_3": "Linked Views for Visual Exploration",
+      "unit2_4": "Multivariate Visualization by Density Estimation",
+      "unit2_5": "Volume Visualization and Rendering",
+      "unit2_6": "Attribute Mapping",
+      "unit2_7": "Visualizing Cluster Analysis",
+      "unit2_8": "Visualizing Contingency Tables and Matrix Visualization",
+      "unit2_9": "Visualization Applications in Various Domains",
+      "--Unit 3": {
+        "type": "separator",
+        "title": "Unit 3"
+      },
+      "unit3": "Programming Statistical Data Visualization in the Java Language",
+      "unit3_1": "Web-Based Statistical Graphics using XML Technologies",
+      "unit3_2": "Google Map API",
+      "unit3_3": "Google Chart",
+      "unit3_4": "Tableau - Heat Map Generation",
+      "unit3_5": "Rank Analysis Tools",
+      "unit3_6": "Trend Analysis Tools",
+      "unit3_7": "Multivariate Analysis Tools",
+      "unit3_8": "Distribution Analysis Tools",
+      "unit3_9": "Correlation Analysis Tools",
+      "unit3_10": "Geographical Analysis Tools"
+}
