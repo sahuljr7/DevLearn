@@ -16,6 +16,10 @@
     "title": "BDA",
     "type": "page"
   },
+  "fwmc": {
+    "title": "FWMC",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {

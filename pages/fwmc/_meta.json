@@ -1,0 +1,14 @@
+{
+    "index": "Getting Started",
+    "--Unit 1": {
+        "type": "separator",
+        "title": "Unit 1"
+      },
+      "unit1": "Historical Perspective",
+      "unit1_1": "EM Frequency Spectrum & Bandwidth",
+      "unit1_2": "Signal & Its representation",
+      "unit1_3": "Elements of Electronic Communication System",
+      "unit1_4": "Primary Communication Resources",
+      "unit1_5": "Signal Transmission Concepts",
+      "unit1_6": "Signal Radiation & Propagation"
+}
