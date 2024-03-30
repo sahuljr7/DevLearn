@@ -1,0 +1,64 @@
+# Bayes Theorem
+
+## Definition
+
+- **Definition:**
+  - Bayes theorem is a fundamental principle in probability theory that describes the probability of an event based on prior knowledge or information.
+  - It enables the updating of beliefs or probabilities as new evidence becomes available.
+
+- **Formula:**
+  - Bayes theorem is mathematically represented as:
+    - P(A|B) = (P(B|A) * P(A)) / P(B)
+
+## Components
+
+- **Prior Probability (P(A)):**
+  - P(A) represents the initial probability or belief in event A before considering any new evidence.
+
+- **Likelihood (P(B|A)):**
+  - P(B|A) is the probability of observing evidence B given that event A has occurred.
+
+- **Evidence (P(B)):**
+  - P(B) is the probability of observing evidence B, irrespective of whether event A has occurred or not.
+
+## Application in R
+
+- **Statistical Inference:**
+  - Bayes theorem is extensively used in statistical inference, hypothesis testing, and Bayesian modeling.
+  - R provides various packages like `bayesplot` and `rstan` for Bayesian analysis and probabilistic modeling.
+
+- **Prediction:**
+  - Bayes theorem is employed in predictive modeling to update probabilities and make predictions based on observed data.
+
+## Importance
+
+- **Decision Making:**
+  - Bayes theorem facilitates rational decision-making by incorporating new evidence or information into existing beliefs or probabilities.
+
+- **Uncertainty Quantification:**
+  - It allows for the quantification of uncertainty and risk in decision-making processes.
+
+## Example
+
+```r
+# Sample dataset
+# Consider two events: A and B
+# A represents the occurrence of a disease
+# B represents the presence of symptoms
+
+# Prior probability of disease (P(A))
+P_A <- 0.01
+
+# Likelihood of observing symptoms given disease (P(B|A))
+P_B_given_A <- 0.95
+
+# Probability of observing symptoms (P(B))
+# Assume 10% of the population has symptoms
+P_B <- 0.10
+
+# Calculate posterior probability of disease given symptoms (P(A|B))
+P_A_given_B <- (P_B_given_A * P_A) / P_B
+print(P_A_given_B)
+```
+
+In this example, if the prior probability of a disease is 0.01, the likelihood of observing symptoms given the disease is 0.95, and the probability of observing symptoms in the population is 0.10, then the posterior probability of the disease given the presence of symptoms (P(A|B)) is calculated using Bayes theorem.

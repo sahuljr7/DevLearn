@@ -8,6 +8,10 @@
     "title": "DV",
     "type": "page"
   },
+  "smur": {
+    "title": "SMUR",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {

@@ -1,0 +1,21 @@
+{
+    "index": "Getting Started",
+    "--Unit 1": {
+        "type": "separator",
+        "title": "Unit 1"
+      },
+      "unit1" : "Measures of Central Tendency",
+      "unit1_1": "Arithmetic Mean",
+      "unit1_2": "Median",
+      "unit1_3": "Mode",
+      "unit1_4": "Measures of Dispersion",
+      "unit1_5": "Probability – Mathematical and Statistical definition",
+      "unit1_6": "Addition and Multiplication theorem",
+      "unit1_7": "Conditional Probability",
+      "unit1_8": "Bayes Theorem",
+      "--Unit 2": {
+        "type": "separator",
+        "title": "Unit 2"
+      },
+      "unit2": "Regression analysis- its properties"
+}

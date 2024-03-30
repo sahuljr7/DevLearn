@@ -1,0 +1,34 @@
+# Median
+
+## Definition
+
+- The median is a measure of central tendency that represents the middle value of a dataset when it is ordered from least to greatest.
+- It divides the dataset into two equal parts.
+
+## Calculation in R
+
+- In R, the median can be calculated using the `median()` function.
+- This function takes a vector of numeric values as input and returns their median.
+
+## Properties
+
+- The median is robust to outliers in the data, making it suitable for skewed distributions.
+- It is not influenced by extreme values as much as the arithmetic mean.
+
+## Interpretation
+
+- The median provides a more accurate representation of central tendency when the data is skewed or contains outliers.
+- It is particularly useful when analyzing non-normally distributed data.
+
+## Example
+
+```r
+# Sample dataset
+data <- c(10, 20, 30, 40, 50)
+
+# Calculate the median
+median_value <- median(data)
+print(median_value)
+```
+
+In this example, the median of the dataset `{10, 20, 30, 40, 50}` is calculated to be `30`.

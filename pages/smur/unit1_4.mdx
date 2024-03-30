@@ -1,0 +1,69 @@
+# Measures of Dispersion: Range, Quartile Deviation, Standard Deviation, Variance
+
+## Range
+
+- **Definition:**
+  - The range is the difference between the maximum and minimum values in a dataset.
+  - It provides a simple measure of the spread of data.
+
+- **Calculation in R:**
+  - Use the `range()` function to calculate the range in R.
+
+## Quartile Deviation
+
+- **Definition:**
+  - Quartile deviation measures the spread of data by dividing the data into quartiles.
+  - It is the difference between the first (Q1) and third (Q3) quartiles.
+
+- **Calculation in R:**
+  - Calculate quartiles using the `quantile()` function and then find the quartile deviation.
+
+## Standard Deviation
+
+- **Definition:**
+  - Standard deviation measures the average deviation of data points from the mean.
+  - It quantifies the spread or dispersion of data points.
+
+- **Calculation in R:**
+  - Use the `sd()` function to calculate the standard deviation in R.
+
+## Variance
+
+- **Definition:**
+  - Variance is the square of the standard deviation.
+  - It provides a measure of the average squared deviation of data points from the mean.
+
+- **Calculation in R:**
+  - Use the `var()` function to calculate the variance in R.
+
+## Interpretation
+
+- Range provides a simple indication of data spread but is sensitive to outliers.
+- Quartile deviation is less sensitive to outliers and provides a better measure of spread for skewed data.
+- Standard deviation and variance are widely used measures of dispersion that consider all data points, providing more comprehensive insights into the variability of the dataset.
+
+## Example
+
+```r
+# Sample dataset
+data <- c(10, 20, 30, 40, 50)
+
+# Calculate range
+range_value <- diff(range(data))
+print(range_value)
+
+# Calculate quartile deviation
+quartiles <- quantile(data, c(0.25, 0.75))
+quartile_deviation <- quartiles[4] - quartiles[2]
+print(quartile_deviation)
+
+# Calculate standard deviation
+standard_deviation <- sd(data)
+print(standard_deviation)
+
+# Calculate variance
+variance <- var(data)
+print(variance)
+```
+
+In this example, the range, quartile deviation, standard deviation, and variance of the dataset `{10, 20, 30, 40, 50}` are calculated.

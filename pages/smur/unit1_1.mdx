@@ -1,0 +1,36 @@
+# Arithmetic Mean
+
+## Definition
+
+- The arithmetic mean is a measure of central tendency that represents the average of a dataset.
+- It is calculated by summing all values in the dataset and dividing by the total number of values.
+
+## Calculation in R
+
+- In R, the arithmetic mean can be calculated using the `mean()` function.
+- This function takes a vector of numeric values as input and returns their arithmetic mean.
+
+## Properties
+
+- The arithmetic mean is sensitive to outliers in the data.
+- It is affected by extreme values, which can skew the result.
+- The arithmetic mean is widely used in various fields for its simplicity and interpretability.
+
+## Interpretation
+
+- The arithmetic mean provides a single value that summarizes the central tendency of a dataset.
+- It is suitable for symmetrically distributed data without significant outliers.
+- However, it may not accurately represent the central tendency if the data is skewed or contains outliers.
+
+## Example
+
+```r
+# Sample dataset
+data <- c(10, 20, 30, 40, 50)
+
+# Calculate the arithmetic mean
+mean_value <- mean(data)
+print(mean_value)
+```
+
+In this example, the arithmetic mean of the dataset `{10, 20, 30, 40, 50}` is calculated to be `30`.
