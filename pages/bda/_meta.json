@@ -1,0 +1,15 @@
+{
+    "index": "Getting Started",
+    "--Unit 1": {
+        "type": "separator",
+        "title": "Unit 1"
+      },
+      "unit1" : "Introduction to Big Data",
+      "unit1_1": "Importance of Big Data",
+      "unit1_2": "Characteristics of Big Data (Volume, Velocity, Variety, Veracity, and Value)",
+      "unit1_3": "Importance and applications of Big Data",
+      "unit1_4": "Introduction to Hadoop",
+      "unit1_5": " Hadoop Distributed File System (HDFS)",
+      "unit1_6": "Map Reduce Paradigm",
+      "unit1_7": "Apache Spark and its features"
+}

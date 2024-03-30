@@ -12,6 +12,10 @@
     "title": "SMUR",
     "type": "page"
   },
+  "bda": {
+    "title": "BDA",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {
