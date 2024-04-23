@@ -20,6 +20,10 @@
     "title": "FWMC",
     "type": "page"
   },
+  "lab1": {
+    "title": "BDA Lab",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {
