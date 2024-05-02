@@ -17,5 +17,10 @@
         "type": "separator",
         "title": "Unit 2"
       },
-      "unit2": "Regression analysis- its properties"
+      "unit2": "Regression analysis- its properties",
+      "--Unit 3": {
+        "type": "separator",
+        "title": "Unit 3"
+      },
+      "unit3": "Introduction to sampling"
 }
