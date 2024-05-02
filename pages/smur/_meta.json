@@ -19,9 +19,20 @@
         "title": "Unit 2"
       },
       "unit2": "Regression analysis- its properties",
+      "unit2_1": "Various Methods to Perform Regression Analysis",
+      "unit2_2": "Numericals on regression analysis",
+      "unit2_3": "Bernoulli distribution",
+      "unit2_4": "Binomial distribution",
+      "unit2_5": "Poisson distribution",
+      "unit2_6": "Uniform distribution",
+      "unit2_7": "Exponential distribution",
+      "unit2_8": "Normal distribution",
+      "unit2_9": "Area under the normal curve",
       "--Unit 3": {
         "type": "separator",
         "title": "Unit 3"
       },
-      "unit3": "Introduction to sampling"
+      "unit3": "Sampling",
+      "unit3_1": "Testing of Hypothesis",
+      "unit3_2": "Analysis of Variance (Anova)"
 }
