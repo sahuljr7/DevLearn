@@ -1,0 +1,51 @@
+# Analysis of Variance (ANOVA)
+
+## One-way ANOVA
+
+- **Definition**:
+  - One-way ANOVA is used to compare the means of three or more groups to determine whether there are statistically significant differences among the means.
+
+- **Procedure**:
+  1. **Formulate Hypotheses**:
+     - Null Hypothesis $$(H_0)$$: There is no difference in means among the groups.
+     - Alternative Hypothesis $$(H_a)$$: At least one group mean is different from the others.
+
+  2. **Perform ANOVA Test**:
+     - Use the `aov()` function in R to perform one-way ANOVA.
+     - Example: `model <- aov(response_variable ~ group_variable, data = dataset)`
+
+  3. **Interpret Results**:
+     - Check the ANOVA table for the F-statistic, degrees of freedom, and p-value.
+     - If the p-value is less than the chosen significance level $$(α)$$, reject the null hypothesis.
+
+## Two-way ANOVA
+
+- **Definition**:
+  - Two-way ANOVA is used to analyze the effects of two categorical independent variables (factors) on a continuous dependent variable.
+
+- **Procedure**:
+  1. **Formulate Hypotheses**:
+     - Null Hypothesis $$(H_0)$$: There is no interaction between the two factors and no main effects.
+     - Alternative Hypothesis $$(H_a)$$: There is an interaction between the factors or at least one main effect is present.
+
+  2. **Perform ANOVA Test**:
+     - Use the `aov()` function with interaction terms in R to perform two-way ANOVA.
+     - Example: `model <- aov(response_variable ~ factor1 * factor2, data = dataset)`
+
+  3. **Interpret Results**:
+     - Examine the ANOVA table for main effects and interaction effects.
+     - Check the p-values to determine significance.
+
+## Post-hoc Tests
+
+- **Definition**:
+  - Post-hoc tests are performed after finding a significant result in ANOVA to determine which specific group means differ from each other.
+
+- **Procedure**:
+  - Common post-hoc tests include Tukey's HSD test, Bonferroni correction, and LSD test.
+  - Use functions like `TukeyHSD()`, `pairwise.t.test()`, or specialized packages like `multcomp` in R.
+
+- **Interpretation**:
+  - Post-hoc tests provide pairwise comparisons between group means, indicating which groups differ significantly.
+
+Using ANOVA and post-hoc tests in R allows researchers to analyze the differences between groups and identify significant effects in their data.
