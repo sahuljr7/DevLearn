@@ -4,24 +4,8 @@
     "type": "page",
     "display": "hidden"
   },
-  "dv": {
-    "title": "DV",
-    "type": "page"
-  },
-  "smur": {
-    "title": "SMUR",
-    "type": "page"
-  },
-  "bda": {
-    "title": "BDA",
-    "type": "page"
-  },
-  "fwmc": {
-    "title": "FWMC",
-    "type": "page"
-  },
-  "lab1": {
-    "title": "BDA Lab",
+  "interview": {
+    "title": "Interview",
     "type": "page"
   },
   "404": {

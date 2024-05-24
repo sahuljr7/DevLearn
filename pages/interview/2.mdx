@@ -1,0 +1,119 @@
+# sql interview questions and answers
+
+### 1. What is SQL?
+
+**Answer:** SQL stands for Structured Query Language. It is used to communicate with and manipulate databases. SQL is standardized and used by most relational database management systems (RDBMS).
+
+### 2. What are the different types of SQL statements?
+
+**Answer:**
+- **DDL (Data Definition Language)**: Used to define the database schema and structure. Examples include `CREATE`, `ALTER`, `DROP`, `TRUNCATE`, `RENAME`.
+
+- **DML (Data Manipulation Language)**: Used to manage data within the database. Examples include `SELECT`, `INSERT`, `UPDATE`, `DELETE`.
+
+- **DQL (Data Query Language)**: Used to fetch data from the database. The primary command is `SELECT`.
+
+- **DCL (Data Control Language)**: Used to control access to data within the database. Examples include `GRANT`, `REVOKE`.
+
+### 3. What is the difference between `CHAR` and `VARCHAR` data types?
+
+**Answer:**
+- **CHAR**: Fixed-length character data type. It stores strings of fixed length. If the length of the value is less than the defined length, it pads spaces.
+- **VARCHAR**: Variable-length character data type. It stores strings of variable length up to a maximum length specified.
+
+### 4. Explain the difference between `INNER JOIN` and `LEFT JOIN`.
+
+**Answer:**
+- **INNER JOIN**: Retrieves records that have matching values in both tables based on the join condition.
+  ```sql
+  SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+  ```
+- **LEFT JOIN (or LEFT OUTER JOIN)**: Retrieves all records from the left table (`table1`), and the matched records from the right table (`table2`). If there is no match, NULL values are returned for the right table columns.
+  ```sql
+  SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
+  ```
+
+### 5. What is a primary key?
+
+**Answer:** A primary key is a column (or a set of columns) that uniquely identifies each row in a table. It must contain unique values and cannot contain NULL values.
+
+### 6. What is a foreign key?
+
+**Answer:** A foreign key is a column (or a set of columns) in one table that refers to the primary key in another table. It establishes a link between the two tables.
+
+### 7. Explain the difference between `WHERE` and `HAVING` clauses.
+
+**Answer:**
+- **WHERE clause**: Used to filter records before any groupings are made (filters rows based on a condition).
+  ```sql
+  SELECT * FROM table WHERE condition;
+  ```
+- **HAVING clause**: Used to filter records after groups are made (filters groups based on a condition).
+  ```sql
+  SELECT column, COUNT(*) FROM table GROUP BY column HAVING condition;
+  ```
+
+### 8. What is the difference between `TRUNCATE` and `DELETE` statements?
+
+**Answer:**
+- **DELETE**: Deletes rows from a table based on a condition. It can be rolled back.
+  ```sql
+  DELETE FROM table WHERE condition;
+  ```
+- **TRUNCATE**: Deletes all rows from a table. It cannot be rolled back and does not return the number of deleted rows.
+  ```sql
+  TRUNCATE TABLE table;
+  ```
+
+### 9. Explain the `GROUP BY` clause.
+
+**Answer:** The `GROUP BY` clause is used to group rows that have the same values into summary rows, like "find the number of customers in each city".
+
+```sql
+SELECT column1, COUNT(*) FROM table GROUP BY column1;
+```
+
+### 10. What is a subquery?
+
+**Answer:** A subquery is a query nested inside another query. It can be used in various parts of a SQL statement, such as the `SELECT`, `INSERT`, `UPDATE`, or `DELETE` statements.
+
+```sql
+SELECT column1 FROM table1 WHERE column2 IN (SELECT column3 FROM table2 WHERE condition);
+```
+
+### 11. What is the difference between `COUNT(*)` and `COUNT(column)`?
+
+**Answer:**
+- **COUNT(*)**: Counts the number of rows in a table (including rows with NULL values).
+- **COUNT(column)**: Counts the number of non-NULL values in a specific column.
+
+### 12. How do you order the results of a query?
+
+**Answer:** Use the `ORDER BY` clause to sort the result set based on one or more columns, either ascending (`ASC`) or descending (`DESC`).
+
+```sql
+SELECT * FROM table ORDER BY column ASC;
+```
+
+### 13. How do you retrieve unique values from a column?
+
+**Answer:** Use the `DISTINCT` keyword to retrieve unique values from a column.
+
+```sql
+SELECT DISTINCT column FROM table;
+```
+
+### 14. What is a transaction?
+
+**Answer:** A transaction is a set of SQL statements that are executed as a single unit. It is treated as one logical unit of work, which either fully completes or is fully rolled back.
+
+### 15. How can you limit the number of rows returned by a query?
+
+**Answer:** Use the `LIMIT` clause to specify the number of rows returned by a query.
+
+```sql
+SELECT * FROM table LIMIT 10;
+```
+
+These are some common SQL interview questions and answers. Make sure to understand these concepts well and practice writing SQL queries to prepare for your SQL interview.
+

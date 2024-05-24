@@ -1,0 +1,85 @@
+# javascript interview questions and answers
+
+
+### 1. What is JavaScript?
+
+**Answer:** JavaScript is a high-level, interpreted programming language used to make web pages interactive and dynamic. It is widely used for client-side development in web browsers, but it can also be used on the server-side with Node.js.
+
+### 2. What are the data types in JavaScript?
+
+**Answer:** JavaScript has seven data types:
+- **Primitive types**: `number`, `string`, `boolean`, `null`, `undefined`, `symbol` (added in ES6)
+- **Reference types**: `object` (including arrays and functions)
+
+### 3. What is the difference between `null` and `undefined`?
+
+**Answer:**
+- `null` represents the intentional absence of any object value.
+- `undefined` represents the uninitialized, default value of a variable or property.
+
+### 4. Explain the difference between `==` and `===`.
+
+**Answer:**
+- `==` checks for equality after performing type conversion.
+- `===` checks for equality without performing type conversion (strict equality).
+
+### 5. What are closures in JavaScript?
+
+**Answer:** Closures are functions that have access to their own scope, the scope of the outer function, and the global scope. They can "remember" and access variables in their lexical scope even when the function is executed outside that scope.
+
+### 6. Explain `hoisting` in JavaScript.
+
+**Answer:** Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope (global or function) before code execution. This applies to both variable and function declarations.
+
+### 7. What is event delegation in JavaScript?
+
+**Answer:** Event delegation is a technique where you attach a single event listener to a parent element, rather than to each individual child element. This allows you to manage events from multiple elements using a single event listener.
+
+### 8. Explain the concept of Promises.
+
+**Answer:** Promises are objects that represent the eventual completion or failure of an asynchronous operation. They allow you to write asynchronous code in a more synchronous-like fashion using `.then()` and `.catch()` methods.
+
+### 9. How does `async`/`await` work?
+
+**Answer:** `async` functions enable you to write promise-based asynchronous code as if it were synchronous. `await` is used inside `async` functions to wait for a promise to resolve before continuing with the execution of the code.
+
+### 10. What is the difference between `var`, `let`, and `const`?
+
+**Answer:**
+- `var` has function scope and can be redeclared and updated.
+- `let` has block scope and can be updated but not redeclared.
+- `const` has block scope and cannot be updated or redeclared (it must be initialized with a value).
+
+### 11. How do you handle errors in JavaScript?
+
+**Answer:** Errors in JavaScript can be handled using `try...catch` blocks for synchronous code and `.catch()` method for Promises. Errors can also be thrown manually using the `throw` statement.
+
+### 12. Explain the concept of `this` keyword.
+
+**Answer:** `this` refers to the object that is executing the current function. Its value is determined by how a function is called. In the global context, `this` refers to the global object (window in browsers).
+
+### 13. What are the different ways to create objects in JavaScript?
+
+**Answer:** There are several ways to create objects in JavaScript:
+- Object literals: `const obj = { key: 'value' };`
+- Constructor functions: `function Person(name) { this.name = name; }`
+- ES6 Classes: `class Person { constructor(name) { this.name = name; } }`
+- Object.create(): `const obj = Object.create(proto);`
+
+### 14. Explain the concept of prototypal inheritance in JavaScript.
+
+**Answer:** Prototypal inheritance in JavaScript means objects can inherit properties and methods from a prototype object. Every object has a prototype (except for the base `Object.prototype`), and it can inherit properties and methods from this prototype.
+
+### 15. How do you make an AJAX request in JavaScript?
+
+**Answer:** You can make AJAX requests using the `XMLHttpRequest` object or the `fetch` API in modern browsers.
+
+Example using `fetch`:
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+These are some common JavaScript interview questions and answers. Make sure to understand these concepts well and practice writing JavaScript code to prepare for your interview.
