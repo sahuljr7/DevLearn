@@ -1,0 +1,80 @@
+# Object-Oriented Features
+
+## Introduction
+- Object-oriented programming (OOP) is a paradigm that uses "objects" to design applications and computer programs.
+- Java is an object-oriented programming language, meaning it emphasizes the use of objects and classes.
+
+## Main Object-Oriented Features
+1. **Encapsulation**
+2. **Inheritance**
+3. **Polymorphism**
+4. **Abstraction**
+
+## Encapsulation
+- **Definition**: Wrapping data (fields) and code (methods) into a single unit (class).
+- **Access Control**: Use private fields and public getter/setter methods.
+- **Benefits**: 
+  - Protects data integrity.
+  - Hides the internal implementation details.
+  - Promotes modularity.
+
+## Inheritance
+- **Definition**: Mechanism where one class (subclass) inherits fields and methods from another class (superclass).
+- **Syntax**: `class SubClass extends SuperClass { ... }`
+- **Types**:
+  - **Single Inheritance**: One superclass, one subclass.
+  - **Hierarchical Inheritance**: One superclass, multiple subclasses.
+- **Benefits**:
+  - Promotes code reusability.
+  - Establishes a natural hierarchy.
+
+## Polymorphism
+- **Definition**: Ability of an object to take many forms.
+- **Types**:
+  - **Compile-time Polymorphism (Method Overloading)**:
+    - Same method name, different parameters.
+    - Example: 
+      ```java
+      void display() { ... }
+      void display(int x) { ... }
+      ```
+  - **Runtime Polymorphism (Method Overriding)**:
+    - Subclass provides specific implementation of a method declared in its superclass.
+    - Example:
+      ```java
+      @Override
+      void display() { ... }
+      ```
+- **Benefits**:
+  - Increases the flexibility and scalability of code.
+  - Promotes dynamic method resolution at runtime.
+
+## Abstraction
+- **Definition**: Hiding the complex implementation details and showing only the essential features of an object.
+- **Techniques**:
+  - **Abstract Classes**:
+    - Cannot be instantiated.
+    - Can have abstract methods (without body) and concrete methods.
+    - Example:
+      ```java
+      abstract class Animal {
+          abstract void sound();
+      }
+      ```
+  - **Interfaces**:
+    - Contains method signatures without bodies.
+    - A class implements an interface to provide the method bodies.
+    - Example:
+      ```java
+      interface Animal {
+          void sound();
+      }
+      ```
+
+## Key Benefits of OOP
+- **Modularity**: Breaking down the program into smaller, manageable pieces (classes).
+- **Reusability**: Reusing existing code through inheritance.
+- **Scalability**: Easily extendable code with new features or changes.
+- **Maintainability**: Easier to manage and update due to well-structured code.
+
+Understanding these core object-oriented features in Java is essential for creating robust, maintainable, and scalable software applications.

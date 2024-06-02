@@ -8,6 +8,14 @@
     "title": "Interview",
     "type": "page"
   },
+  "java": {
+    "title": "Java",
+    "type": "page"
+  },
+  "company": {
+    "title": "Company",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {

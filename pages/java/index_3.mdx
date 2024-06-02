@@ -1,0 +1,129 @@
+# Methods and Fields
+
+## Introduction
+- **Fields** and **Methods** are fundamental components of a Java class.
+- Fields hold data, while methods define behavior.
+
+## Fields
+
+### Definition
+- **Fields**: Variables that store data for an object.
+- Also known as member variables or attributes.
+
+### Types of Fields
+1. **Instance Fields**: 
+   - Belong to an instance of a class.
+   - Each object has its own copy.
+   - Example:
+     ```java
+     public class Car {
+         int speed;  // Instance field
+     }
+     ```
+2. **Static Fields**:
+   - Belong to the class, not any particular instance.
+   - Shared among all instances.
+   - Example:
+     ```java
+     public class Car {
+         static int totalCars;  // Static field
+     }
+     ```
+
+### Access Modifiers
+- **Public**: Accessible from any other class.
+- **Private**: Accessible only within the same class.
+- **Protected**: Accessible within the same package and subclasses.
+- **Default (no modifier)**: Accessible within the same package.
+
+### Example
+```java
+public class Person {
+    private String name;  // Private instance field
+    public static int population;  // Public static field
+
+    public String getName() {  // Public method to access private field
+        return name;
+    }
+
+    public void setName(String name) {  // Public method to modify private field
+        this.name = name;
+    }
+}
+```
+
+## Methods
+
+### Definition
+- **Methods**: Functions that define behavior and perform operations.
+- Can manipulate fields and perform operations on objects.
+
+### Types of Methods
+1. **Instance Methods**:
+   - Operate on instances of a class.
+   - Can access instance fields and methods.
+   - Example:
+     ```java
+     public class Car {
+         public void drive() {  // Instance method
+             // Code to drive the car
+         }
+     }
+     ```
+2. **Static Methods**:
+   - Belong to the class, not to any specific instance.
+   - Can access static fields and methods only.
+   - Example:
+     ```java
+     public class Car {
+         public static void showTotalCars() {  // Static method
+             // Code to display total number of cars
+         }
+     }
+     ```
+
+### Method Overloading
+- **Method Overloading**: Multiple methods with the same name but different parameters.
+- Enhances readability and functionality.
+- Example:
+  ```java
+  public class Calculator {
+      public int add(int a, int b) {  // Method 1
+          return a + b;
+      }
+
+      public double add(double a, double b) {  // Method 2
+          return a + b;
+      }
+  }
+  ```
+
+### Access Modifiers
+- Same as fields: `public`, `private`, `protected`, and default (no modifier).
+
+### Example
+```java
+public class Person {
+    private String name;
+
+    // Constructor
+    public Person(String name) {
+        this.name = name;
+    }
+
+    // Instance method
+    public String getName() {
+        return name;
+    }
+
+    // Static method
+    public static void printPopulation() {
+        System.out.println("Population: " + population);
+    }
+}
+```
+
+## Summary
+- **Fields** store data and can be either instance-specific or shared (static).
+- **Methods** define behavior, can be overloaded, and can be either instance-specific or class-specific (static).
+- Proper use of access modifiers ensures encapsulation and security in your code.

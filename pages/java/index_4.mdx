@@ -1,0 +1,90 @@
+# Access Modifiers
+
+## Introduction
+- Access modifiers control the visibility and accessibility of classes, methods, and fields in Java.
+- They help in encapsulating data and ensuring security and proper access control.
+
+## Types of Access Modifiers
+
+### 1. Public
+- **Scope**: Accessible from any other class.
+- **Usage**: Used when you want to allow unrestricted access.
+- **Example**:
+  ```java
+  public class Car {
+      public int speed;
+
+      public void displaySpeed() {
+          System.out.println(speed);
+      }
+  }
+  ```
+
+### 2. Private
+- **Scope**: Accessible only within the same class.
+- **Usage**: Used to restrict access and protect data from outside interference.
+- **Example**:
+  ```java
+  public class Car {
+      private int speed;
+
+      public int getSpeed() {
+          return speed;
+      }
+
+      public void setSpeed(int speed) {
+          this.speed = speed;
+      }
+  }
+  ```
+
+### 3. Protected
+- **Scope**: Accessible within the same package and by subclasses (even if they are in different packages).
+- **Usage**: Used when you want to allow access to subclasses but not to other unrelated classes.
+- **Example**:
+  ```java
+  public class Vehicle {
+      protected int speed;
+
+      protected void displaySpeed() {
+          System.out.println(speed);
+      }
+  }
+
+  public class Car extends Vehicle {
+      public void showSpeed() {
+          displaySpeed();
+      }
+  }
+  ```
+
+### 4. Default (Package-Private)
+- **Scope**: Accessible only within the same package.
+- **Usage**: Used when you want to restrict access to within the package.
+- **No Keyword**: If no access modifier is specified, it defaults to package-private.
+- **Example**:
+  ```java
+  class Car {
+      int speed;  // Default access
+
+      void displaySpeed() {
+          System.out.println(speed);
+      }
+  }
+  ```
+
+## Summary of Access Levels
+| Modifier    | Class | Package | Subclass | World  |
+|-------------|-------|---------|----------|--------|
+| **public**  | Yes   | Yes     | Yes      | Yes    |
+| **protected**| Yes  | Yes     | Yes      | No     |
+| **default** | Yes   | Yes     | No       | No     |
+| **private** | Yes   | No      | No       | No     |
+
+## Usage Guidelines
+- **public**: Use for APIs and classes that need to be accessed from any other class.
+- **private**: Use for fields and methods that should not be exposed outside the class. Ideal for internal data and helper methods.
+- **protected**: Use for fields and methods that should be accessible in subclasses for extension purposes.
+- **default**: Use when you want to restrict access to the package level, ensuring internal package cohesion.
+
+By understanding and correctly applying access modifiers, you can ensure proper encapsulation, data hiding, and maintainable code in Java.

@@ -1,0 +1,112 @@
+# Setters and Getters
+
+## Introduction
+- **Setters** and **Getters** are methods used to access and update the values of private fields in a class.
+- They provide a way to enforce encapsulation and data integrity.
+
+## Purpose of Setters and Getters
+- **Encapsulation**: Keep the internal representation of an object hidden from outside manipulation.
+- **Control**: Provide controlled access to the fields of a class.
+- **Validation**: Perform validation before setting a value.
+- **Read-Only or Write-Only Properties**: Make a field read-only or write-only.
+
+## Getter Methods
+
+### Definition
+- **Getter Method**: A method that retrieves (gets) the value of a private field.
+- Naming Convention: Prefix `get` followed by the field name with the first letter capitalized.
+
+### Example
+```java
+public class Person {
+    private String name;
+
+    // Getter method for name
+    public String getName() {
+        return name;
+    }
+}
+```
+
+### Syntax
+```java
+public ReturnType getFieldName() {
+    return fieldName;
+}
+```
+
+### Characteristics
+- No parameters.
+- Returns the value of the private field.
+- Public access modifier.
+
+## Setter Methods
+
+### Definition
+- **Setter Method**: A method that updates (sets) the value of a private field.
+- Naming Convention: Prefix `set` followed by the field name with the first letter capitalized.
+
+### Example
+```java
+public class Person {
+    private String name;
+
+    // Setter method for name
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+
+### Syntax
+```java
+public void setFieldName(FieldType fieldName) {
+    this.fieldName = fieldName;
+}
+```
+
+### Characteristics
+- Takes one parameter of the field's type.
+- No return value (void).
+- Public access modifier.
+
+## Example with Both Getter and Setter
+```java
+public class Person {
+    private String name;
+    private int age;
+
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter for age
+    public int getAge() {
+        return age;
+    }
+
+    // Setter for age
+    public void setAge(int age) {
+        if (age > 0) {  // Validation check
+            this.age = age;
+        }
+    }
+}
+```
+
+## Benefits of Using Setters and Getters
+- **Encapsulation**: Hide the internal state of the object.
+- **Validation**: Ensure that the field values are valid (e.g., non-negative age).
+- **Flexibility**: Change the internal implementation without affecting external code.
+- **Readability**: Clarify the purpose of accessing or modifying a field.
+
+## Summary
+- **Getters** and **Setters** are essential for maintaining encapsulation in Java.
+- They provide controlled access to private fields and allow for validation and flexibility.
+- Following the naming conventions and using these methods consistently leads to clear, maintainable, and robust code.

@@ -1,0 +1,107 @@
+# Classes
+
+## Definition
+- **Class**: A blueprint for creating objects. It defines a type of object according to the data it holds and the methods that manipulate the data.
+
+## Class Structure
+- **Class Declaration**: `class ClassName { ... }`
+- **Class Name**: Should be a noun, capitalized first letter.
+- **Modifiers**: Can include `public`, `private`, `abstract`, `final`.
+
+## Components of a Class
+- **Fields**: Variables within a class.
+  - Example: `int age;`
+- **Methods**: Functions within a class.
+  - Example: `void display() { ... }`
+- **Constructors**: Special methods to initialize objects.
+  - Example: `ClassName() { ... }`
+- **Blocks**: Initialization blocks for setting up the class state.
+
+## Access Modifiers
+- **Public**: Accessible from any other class.
+- **Private**: Accessible only within the class it is defined.
+- **Protected**: Accessible within the same package and subclasses.
+- **Default (no modifier)**: Accessible only within the same package.
+
+## Method Overloading
+- Defining multiple methods with the same name but different parameters.
+  - Example: 
+    ```java
+    void display() { ... }
+    void display(int x) { ... }
+    ```
+
+## Constructors
+- **Default Constructor**: No parameters, initializes default values.
+- **Parameterized Constructor**: Takes parameters to initialize fields.
+  - Example:
+    ```java
+    ClassName(int x) { ... }
+    ```
+
+## Inheritance
+- **Single Inheritance**: A class inherits from one superclass.
+  - Example: `class SubClass extends SuperClass { ... }`
+- **Method Overriding**: Redefining a superclass method in a subclass.
+  - Example:
+    ```java
+    @Override
+    void display() { ... }
+    ```
+
+## Encapsulation
+- Bundling data (fields) and methods operating on the data into one unit.
+- Use of private fields and public getter/setter methods to control access.
+  - Example:
+    ```java
+    private int age;
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+    ```
+
+## Polymorphism
+- **Compile-time Polymorphism**: Method overloading.
+- **Runtime Polymorphism**: Method overriding using inheritance.
+
+## Static Members
+- **Static Fields**: Shared among all instances of a class.
+  - Example: `static int count;`
+- **Static Methods**: Can be called without creating an instance of the class.
+  - Example: `static void displayCount() { ... }`
+
+## Nested Classes
+- **Inner Class**: Defined within another class.
+  - Example:
+    ```java
+    class Outer {
+        class Inner { ... }
+    }
+    ```
+- **Static Nested Class**: A static class within another class.
+  - Example:
+    ```java
+    class Outer {
+        static class StaticNested { ... }
+    }
+    ```
+
+## Abstract Classes
+- Cannot be instantiated, used to define common characteristics.
+  - Example:
+    ```java
+    abstract class Animal { 
+        abstract void sound(); 
+    }
+    ```
+
+## Interfaces
+- A reference type similar to a class that can contain only constants, method signatures, default methods, static methods, and nested types.
+  - Example:
+    ```java
+    interface Animal { 
+        void sound(); 
+    }
+    ```
+
+By understanding these core concepts of Java classes, you can create and manage complex object-oriented programs efficiently.
+
