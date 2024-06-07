@@ -28,5 +28,31 @@
       "state_12": "Kerala",
       "state_13": "Madhya Pradesh",
       "state_14": "Maharashtra",
-      "state_15": "Manipur"
+      "state_15": "Manipur",
+      "state_16": "Meghalaya",
+      "state_17": "Mizoram",
+      "state_18": "Nagaland",
+      "state_19": "Odisha",
+      "state_20": "Punjab",
+      "state_21": "Rajasthan",
+      "state_22": "Sikkim",
+      "state_23": "Tamil Nadu",
+      "state_24": "Telangana",
+      "state_25": "Tripura",
+      "state_26": "Uttar Pradesh",
+      "state_27": "Uttarakhand",
+      "state_28": "West Bengal",
+      "--Union Territories in India": {
+        "type": "separator",
+        "title": "Union Territories in India"
+      },
+      "ut_1": "Andaman and Nicobar Islands",
+      "ut_2": "Chandigarh",
+      "ut_3": "Dadra and Nagar Haveli",
+      "ut_4": "Daman and Diu",
+      "ut_5": "Lakshadweep",
+      "ut_6": "Delhi",
+      "ut_7": "Puducherry",
+      "ut_8": "Ladakh",
+      "ut_9": "Jammu and Kashmir"
 }
