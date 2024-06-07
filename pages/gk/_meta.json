@@ -1,0 +1,32 @@
+{
+    "index": "General Knowledge",
+    "--World History": {
+        "type": "separator",
+        "title": "World History"
+      },
+    "index_1": "Ancient Civilizations",
+    "--Countries": {
+        "type": "separator",
+        "title": "Countries"
+      },
+      "country_1": "Japan",
+      "--Indian States": {
+        "type": "separator",
+        "title": "Indian States"
+      },
+      "state_1": "Goa",
+      "state_2": "Andhra Pradesh",
+      "state_3": "Arunachal Pradesh",
+      "state_4": "Assam",
+      "state_5": "Bihar",
+      "state_6": "Chhattisgarh",
+      "state_7": "Gujarat",
+      "state_8": "Haryana",
+      "state_9": "Himachal Pradesh",
+      "state_10": "Jharkhand",
+      "state_11": "Karnataka",
+      "state_12": "Kerala",
+      "state_13": "Madhya Pradesh",
+      "state_14": "Maharashtra",
+      "state_15": "Manipur"
+}

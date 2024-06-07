@@ -16,6 +16,14 @@
     "title": "Company",
     "type": "page"
   },
+  "gk": {
+    "title": "GK",
+    "type": "page"
+  },
+  "ai": {
+    "title": "AI",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {
