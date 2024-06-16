@@ -20,8 +20,20 @@
     "title": "GK",
     "type": "page"
   },
+  "india": {
+    "title": "India",
+    "type": "page"
+  },
+  "knowledge": {
+    "title": "Knowledge",
+    "type": "page"
+  },
   "ai": {
     "title": "AI",
+    "type": "page"
+  },
+  "daily": {
+    "title": "Daily",
     "type": "page"
   },
   "404": {
