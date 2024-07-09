@@ -1,0 +1,32 @@
+# Techniques for Image Segmentation
+
+#### 1. U-Net
+- **Architecture:** U-Net is a fully convolutional network designed for biomedical image segmentation.
+- **Structure:** It consists of a contracting path to capture context and a symmetric expanding path for precise localization.
+- **Features:** U-Net is efficient for small datasets, uses skip connections to preserve spatial information, and is effective for biomedical and satellite image segmentation tasks.
+
+#### 2. SegNet
+- **Architecture:** SegNet is an encoder-decoder network designed for pixel-wise semantic segmentation.
+- **Structure:** It uses a VGG-like encoder for feature extraction and a mirrored decoder for pixel-wise prediction.
+- **Features:** SegNet uses max-pooling indices for upsampling, reducing computation compared to fully convolutional networks, and is suitable for real-time applications.
+
+#### 3. Mask R-CNN
+- **Architecture:** Mask R-CNN extends Faster R-CNN by adding a branch for predicting segmentation masks alongside bounding box detection.
+- **Structure:** It integrates a Region Proposal Network (RPN) for generating region proposals and a Mask Head for pixel-level segmentation.
+- **Features:** Mask R-CNN achieves state-of-the-art results in instance segmentation tasks by enabling precise object segmentation and detection in complex scenes.
+
+#### 4. DeepLab
+- **Architecture:** DeepLab is a series of convolutional neural networks designed for semantic image segmentation.
+- **Structure:** It includes atrous convolution (dilated convolution) to capture multi-scale context and reduce downsampling artifacts.
+- **Features:** DeepLab achieves high-resolution segmentation and is effective for tasks requiring detailed understanding of object boundaries and textures.
+
+#### 5. FCN (Fully Convolutional Network)
+- **Architecture:** FCN is a pioneering method for pixel-wise semantic segmentation using only convolutional layers.
+- **Structure:** It replaces fully connected layers with convolutional layers for end-to-end pixel-wise prediction.
+- **Features:** FCN is versatile, capable of handling images of arbitrary size, and is used in various applications, including medical imaging and satellite image analysis.
+
+### Applications
+- **Medical Imaging:** U-Net and DeepLab are widely used for organ segmentation and tumor detection.
+- **Autonomous Driving:** SegNet and Mask R-CNN are employed for road scene understanding and object detection.
+- **Satellite Imaging:** FCN and U-Net are applied for land cover mapping and environmental monitoring.
+

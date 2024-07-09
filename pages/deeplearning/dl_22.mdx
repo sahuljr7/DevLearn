@@ -1,0 +1,28 @@
+# Transfer Learning and Fine-Tuning Pre-trained Models
+
+### Transfer Learning
+- **Definition:** Technique where a model trained on one task is reused as a starting point for a model on a different but related task.
+- **Advantages:**
+  - Speeds up training process by leveraging knowledge from pre-trained models.
+  - Requires less labeled data for new tasks.
+  - Helps generalize to new datasets or domains.
+- **Process:**
+  - **Select Pre-trained Model:** Choose a model pre-trained on a large dataset (e.g., ImageNet).
+  - **Adaptation:** Replace the final layer(s) of the pre-trained model with new layers suited for the target task.
+  - **Fine-Tuning:** Optionally, fine-tune the entire or part of the pre-trained model on new data to improve performance.
+
+### Fine-Tuning Pre-trained Models
+- **Definition:** Adjusting the parameters of a pre-trained model on a new dataset to improve performance on a specific task.
+- **Steps:**
+  - **Freezing Layers:** Initially, freeze most of the pre-trained model’s layers to retain learned features.
+  - **Training:** Train the model on the new dataset while adjusting the weights of the unfrozen layers.
+  - **Gradual Unfreezing:** Optionally, unfreeze and fine-tune more layers as needed, typically starting from the end layers.
+- **Use Cases:**
+  - **Image Classification:** Enhance accuracy on specific classes or domains not well-represented in the original pre-training dataset.
+  - **Object Detection:** Improve detection accuracy by fine-tuning on new object classes or environments.
+  - **Semantic Segmentation:** Adapt pre-trained models to accurately segment images in new contexts like satellite or medical imaging.
+
+### Considerations
+- **Data Similarity:** Ensure the new dataset is sufficiently similar to the pre-training dataset for effective transfer.
+- **Overfitting:** Monitor for overfitting when fine-tuning, adjust regularization techniques as needed.
+- **Computational Resources:** Fine-tuning can be resource-intensive, especially for deep models; balance model complexity with available resources.

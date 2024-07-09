@@ -1,0 +1,47 @@
+# Types of Satellite Images
+
+### 1. Multispectral
+- **Definition**: Images captured at different wavelengths across the electromagnetic spectrum.
+- **Bands**: Typically 3-10 bands, including visible and near-infrared.
+- **Uses**: Agriculture (crop health), land cover classification, environmental monitoring.
+
+### 2. Hyperspectral
+- **Definition**: Captures a wide range of wavelengths, often hundreds of narrow bands.
+- **Bands**: 100-200+ bands.
+- **Uses**: Mineralogy, precision agriculture, detecting subtle changes in vegetation.
+
+### 3. Radar
+- **Definition**: Uses radio waves to capture images.
+- **Advantages**: Can see through clouds and works in the dark.
+- **Uses**: Topographic mapping, disaster monitoring (e.g., floods, earthquakes).
+
+## Deep Learning for Sentinel Raster Images and Satellite Images
+
+### Key Concepts
+
+- **Sentinel Satellites**: Part of the European Space Agency's (ESA) Copernicus program. Provides high-resolution images for various applications.
+- **Raster Images**: Digital images represented by a grid of pixels, each with a value representing information such as light intensity or spectral reflectance.
+
+### Applications of Deep Learning
+
+1. **Image Classification**:
+   - **Objective**: Categorize each pixel or region into different classes (e.g., water, forest, urban areas).
+   - **Techniques**: Convolutional Neural Networks (CNNs) are commonly used.
+
+2. **Object Detection**:
+   - **Objective**: Identify and locate specific objects within an image (e.g., ships, buildings).
+   - **Techniques**: Use of advanced CNNs like YOLO (You Only Look Once) and Faster R-CNN.
+
+3. **Change Detection**:
+   - **Objective**: Identify changes in a particular area over time using images from different dates.
+   - **Techniques**: Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks can be used.
+
+4. **Image Segmentation**:
+   - **Objective**: Partition an image into segments that represent different objects or areas.
+   - **Techniques**: U-Net and Fully Convolutional Networks (FCNs) are popular choices.
+
+### Challenges and Considerations
+
+- **Data Quality**: Ensuring high-quality, cloud-free images.
+- **Data Volume**: Handling large volumes of data requires robust storage and processing capabilities.
+- **Model Generalization**: Ensuring models work well across different geographic regions and times.

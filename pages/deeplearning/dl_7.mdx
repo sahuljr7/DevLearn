@@ -1,0 +1,66 @@
+# Image Acquisition and Preprocessing
+
+### Image Acquisition
+
+#### Types of Sensors
+- **Passive Sensors**:
+  - Detect natural energy (e.g., sunlight) reflected or emitted by objects.
+  - Examples: Cameras, multispectral, and hyperspectral sensors.
+  - Uses: Land cover mapping, vegetation analysis.
+
+- **Active Sensors**:
+  - Emit their own signal and measure the reflected signal.
+  - Examples: Radar, LiDAR (Light Detection and Ranging).
+  - Uses: Topographic mapping, vegetation structure analysis.
+
+#### Platforms for Data Collection
+- **Satellites**:
+  - **Low Earth Orbit (LEO)**: 180 km to 2,000 km above Earth (e.g., Sentinel satellites).
+  - **Geostationary Orbit**: Fixed position over one location at about 35,786 km (e.g., weather satellites).
+
+- **Aircraft**:
+  - **Manned Aircraft**: Equipped with cameras or sensors for high-resolution imagery.
+  - **Drones (UAVs)**: Used for detailed, small-area surveys.
+
+### Preprocessing
+
+#### Importance of Preprocessing
+- **Objective**: Correct and enhance raw satellite data for accurate analysis.
+- **Goals**: Remove errors, normalize data, and prepare images for further processing.
+
+#### Common Preprocessing Steps
+
+1. **Radiometric Correction**:
+   - Adjusts pixel values to correct sensor errors and atmospheric effects.
+   - Methods:
+     - **Dark Object Subtraction**: Corrects for atmospheric scattering.
+     - **Top-of-Atmosphere (TOA) Reflectance**: Converts raw data to reflectance values.
+
+2. **Geometric Correction**:
+   - Aligns images to a map coordinate system or another image.
+   - Methods:
+     - **Orthorectification**: Corrects geometric distortions using a digital elevation model (DEM).
+     - **Image Registration**: Aligns multiple images taken at different times or by different sensors.
+
+3. **Atmospheric Correction**:
+   - Removes atmospheric effects to retrieve true surface reflectance.
+   - Methods:
+     - **Radiative Transfer Models**: Simulate radiation passage through the atmosphere.
+
+4. **Cloud Masking**:
+   - Identifies and removes cloud-covered pixels.
+   - Methods:
+     - **Thresholding**: Uses reflectance values to differentiate clouds.
+     - **Automated Algorithms**: Methods like Fmask using multiple spectral bands.
+
+5. **Noise Reduction**:
+   - Removes random noise affecting image quality.
+   - Methods:
+     - **Filtering Techniques**: Median filter, Gaussian filter.
+
+6. **Resampling**:
+   - Adjusts pixel size to match different datasets or improve resolution.
+   - Methods:
+     - **Nearest Neighbor**: Simplest method for categorical data.
+     - **Bilinear Interpolation**: Averages the four nearest pixels.
+     - **Cubic Convolution**: Uses the nearest sixteen pixels for smoother results.

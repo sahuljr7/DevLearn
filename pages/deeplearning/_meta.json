@@ -1,0 +1,96 @@
+{
+    "index": "Syllabus",
+    "--Week 1": {
+        "type": "separator",
+        "title": "Introduction to Satellite Imagery"
+      },
+      "dl_1": "Overview of satellite imaging",
+      "dl_2": "Types of satellite images",
+      "dl_3": "Introduction to Sentinel satellite data",
+      "dl_4": "Applications of satellite imagery",
+      "--Week 2": {
+        "type": "separator",
+        "title": "Basics of Remote Sensing"
+      },
+      "dl_5": "Fundamentals of remote sensing",
+      "dl_6": "Electromagnetic spectrum and its relevance to remote sensing",
+      "dl_7": "Image acquisition and preprocessing",
+      "dl_8": "Tools and software for remote sensing",
+      "--Week 3": {
+        "type": "separator",
+        "title": "Understanding Raster Data"
+      },
+      "dl_9": "Introduction to raster data and its structure",
+      "dl_10": "Raster data processing techniques",
+      "dl_11": "Handling and visualization of raster data using Python libraries",
+      "--Week 4": {
+        "type": "separator",
+        "title": "Data Acquisition and Preprocessing"
+      },
+      "dl_12": "Accessing Sentinel data",
+      "dl_13": "Data preprocessing steps",
+      "dl_14": "Handling missing data and noise",
+      "--Week 5": {
+        "type": "separator",
+        "title": "Introduction to Deep Learning"
+      },
+      "dl_15": "Basics of deep learning and neural networks",
+      "dl_16": "Overview of popular deep learning frameworks",
+      "dl_17": "Setting up the environment for deep learning",
+      "--Week 6": {
+        "type": "separator",
+        "title": "Convolutional Neural Networks (CNNs)"
+      },
+      "dl_18": "Introduction to CNNs and their architecture",
+      "dl_19": "Key operations in CNNs",
+      "dl_20": "Implementing a simple CNN for image classification",
+      "--Week 7": {
+        "type": "separator",
+        "title": "Advanced CNN Architectures"
+      },
+      "dl_21": "Deep CNN architectures",
+      "dl_22": "Transfer learning and fine-tuning pre-trained models",
+      "dl_23": "Practical implementation using Sentinel data",
+      "--Week 8": {
+        "type": "separator",
+        "title": "Image Segmentation Techniques"
+      },
+      "dl_24": "Introduction to image segmentation",
+      "dl_25": "Techniques for image segmentation",
+      "dl_26": "Practical implementation of segmentation models on satellite imagery",
+      "--Week 9": {
+        "type": "separator",
+        "title": "Object Detection in Satellite Images"
+      },
+      "dl_27": "Introduction to object detection",
+      "dl_28": "Object detection algorithms",
+      "dl_29": "Implementing object detection on satellite images",
+      "--Week 10": {
+        "type": "separator",
+        "title": "Change Detection and Time Series Analysis"
+      },
+      "dl_30": "Introduction to change detection",
+      "dl_31": "Techniques for change detection in satellite images",
+      "dl_32": "Time series analysis using satellite imagery",
+      "--Week 11": {
+        "type": "separator",
+        "title": "Land Use and Land Cover Classification"
+      },
+      "dl_33": "Overview of land use and land cover (LULC) classification",
+      "dl_34": "Techniques for LULC classification using deep learning",
+      "dl_35": "Practical implementation using Sentinel data",
+      "--Week 12": {
+        "type": "separator",
+        "title": "Evaluation and Validation"
+      },
+      "dl_36": "Evaluation metrics for image classification, segmentation, and detection",
+      "dl_37": "Techniques for model validation and cross-validation",
+      "dl_38": "Practical tips for improving model performance",
+      "--Week 13": {
+        "type": "separator",
+        "title": "Case Studies and Applications"
+      },
+      "dl_39": "Case studies of deep learning applications in remote sensing",
+      "dl_40": "Real-world projects using Sentinel data",
+      "dl_41": "Discussion of challenges and future trends in satellite image analysis"
+}

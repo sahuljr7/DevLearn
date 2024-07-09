@@ -1,0 +1,24 @@
+# Accessing Sentinel Data
+
+#### Copernicus Open Access Hub
+- **Description**: Provides free access to Sentinel satellite data from the European Space Agency (ESA).
+- **Access**: Users can search, view metadata, and download Sentinel-1, Sentinel-2, and Sentinel-3 data products.
+- **Usage**: Suitable for direct download and integration into local processing workflows.
+
+#### Google Earth Engine
+- **Description**: Cloud-based platform for planetary-scale geospatial analysis.
+- **Access**: Offers access to Sentinel satellite data along with other Earth observation datasets.
+- **Usage**: Users can perform analysis using JavaScript or Python APIs without needing to download the data locally.
+- **Features**: Supports temporal and spatial filtering, image compositing, and application of algorithms at scale.
+
+#### Data Preprocessing Steps
+- **Atmospheric Correction**: Adjusting for atmospheric effects using algorithms like Sen2Cor for Sentinel-2 data.
+- **Geometric Correction**: Ensuring images are correctly aligned spatially using precise geometric models.
+- **Data Fusion**: Integrating multiple sensor images to enhance spatial and spectral resolution.
+- **Quality Assessment**: Checking metadata for data quality indicators like cloud cover percentage or sensor calibration status.
+
+#### Practical Considerations
+- **Band Selection**: Choosing relevant spectral bands (e.g., NIR, SWIR) for specific analysis tasks (e.g., vegetation monitoring).
+- **Temporal Analysis**: Leveraging Sentinel's frequent revisit times for time-series analysis of land use changes.
+- **Integration with Tools**: Using Python libraries like `sentinelsat` for programmatic access and `rasterio` for data manipulation.
+

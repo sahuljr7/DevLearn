@@ -1,0 +1,83 @@
+# Evaluation Metrics for Image Classification, Segmentation, and Detection
+
+#### 1. Image Classification
+
+**Accuracy**:
+- **Definition**: The ratio of correctly predicted instances to the total instances.
+  ![Alt text](../../images/4.png)
+  
+**Precision**:
+- **Definition**: The ratio of correctly predicted positive observations to the total predicted positives.
+  ![Alt text](../../images/5.png)
+
+**Recall (Sensitivity)**:
+- **Definition**: The ratio of correctly predicted positive observations to all observations in the actual class.
+  ![Alt text](../../images/6.png) 
+
+**F1-Score**:
+- **Definition**: The harmonic mean of precision and recall.
+  ![Alt text](../../images/7.png) 
+
+**Confusion Matrix**:
+- **Definition**: A table used to describe the performance of a classification model by comparing actual versus predicted values.
+- **Structure**:
+  - Rows represent actual classes.
+  - Columns represent predicted classes.
+
+**ROC Curve and AUC**:
+- **ROC Curve (Receiver Operating Characteristic)**: Graph showing the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings.
+- **AUC (Area Under the Curve)**: The area under the ROC curve, representing the model's ability to discriminate between positive and negative classes.
+
+#### 2. Image Segmentation
+
+**Intersection over Union (IoU)**:
+- **Definition**: The ratio of the intersection of the predicted segmentation and the ground truth to their union.
+![Alt text](../../images/8.png) 
+
+**Pixel Accuracy**:
+- **Definition**: The ratio of correctly classified pixels to the total number of pixels.
+![Alt text](../../images/9.png) 
+
+**Mean Pixel Accuracy (mPA)**:
+- **Definition**: The average pixel accuracy for each class.
+![Alt text](../../images/10.png) 
+
+**Dice Coefficient (F1 Score for Segmentation)**:
+- **Definition**: Measures the similarity between two samples.
+![Alt text](../../images/11.png) 
+
+**Mean Intersection over Union (mIoU)**:
+- **Definition**: The mean IoU across all classes.
+![Alt text](../../images/12.png) 
+
+#### 3. Object Detection
+
+**Precision and Recall**:
+- **Precision**: Ratio of correctly detected objects to the total number of detected objects.
+- **Recall**: Ratio of correctly detected objects to the total number of actual objects.
+
+**Average Precision (AP)**:
+- **Definition**: The average of precision values at different recall thresholds.
+![Alt text](../../images/13.png) 
+
+**Mean Average Precision (mAP)**:
+- **Definition**: The mean of Average Precision (AP) values for all classes.
+![Alt text](../../images/14.png) 
+
+**Intersection over Union (IoU)**:
+- **Definition**: Used to evaluate the overlap between the predicted bounding box and the ground truth bounding box.
+![Alt text](../../images/15.png) 
+
+**Precision-Recall Curve**:
+- **Definition**: A graph showing the trade-off between precision and recall for different threshold values.
+- **Use**: Helps to visualize the performance of the detection model across different recall levels.
+
+**Confidence Score**:
+- **Definition**: The probability that a predicted bounding box contains an object and the accuracy of the object class prediction.
+- **Use**: Thresholding the confidence score helps to filter out low-confidence detections.
+
+### Summary
+- **Image Classification**: Use metrics like accuracy, precision, recall, F1-score, confusion matrix, and ROC-AUC.
+- **Image Segmentation**: Use metrics like IoU, pixel accuracy, mPA, dice coefficient, and mIoU.
+- **Object Detection**: Use metrics like precision, recall, AP, mAP, IoU, precision-recall curve, and confidence score.
+

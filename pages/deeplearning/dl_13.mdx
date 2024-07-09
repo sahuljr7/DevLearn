@@ -1,0 +1,32 @@
+# Data Preprocessing Steps
+
+#### Atmospheric Correction
+- **Purpose**: Corrects satellite images for atmospheric disturbances such as haze, aerosols, and Rayleigh scattering.
+- **Methods**: Algorithms like Sen2Cor for Sentinel-2 data use specific models to estimate and remove atmospheric effects.
+- **Importance**: Enhances the accuracy of spectral analysis and improves the consistency of satellite data for comparative studies.
+
+#### Geometric Correction
+- **Purpose**: Adjusts satellite images to remove distortions caused by Earth's curvature and sensor position.
+- **Techniques**: Orthorectification involves projecting images onto a standardized map coordinate system using terrain models and satellite sensor parameters.
+- **Benefits**: Ensures spatial accuracy and alignment of images, essential for precise geographic analysis and mapping.
+
+#### Resampling
+- **Purpose**: Adjusts the spatial resolution of satellite images to match other data or analysis requirements.
+- **Methods**: Interpolation techniques like nearest-neighbor, bilinear, or cubic convolution are used to compute new pixel values based on existing ones.
+- **Considerations**: Trade-offs between resolution enhancement and potential loss of information or introduction of artifacts should be balanced based on specific application needs.
+
+#### Image Registration
+- **Purpose**: Aligns multiple satellite images or different sensor bands to a common coordinate system.
+- **Methods**: Uses control points or tie points to match corresponding features between images, ensuring spatial consistency.
+- **Applications**: Facilitates image fusion, change detection, and multi-temporal analysis by enabling accurate pixel-to-pixel comparison.
+
+#### Quality Assessment
+- **Purpose**: Evaluates the reliability and usability of satellite data for intended applications.
+- **Criteria**: Includes parameters such as radiometric accuracy, sensor calibration status, cloud cover percentage, and image metadata completeness.
+- **Actions**: Data with low quality indicators may be filtered out or undergo further preprocessing steps to mitigate inaccuracies.
+
+#### Data Normalization
+- **Purpose**: Adjusts the range or distribution of pixel values in satellite images to standardize data for consistent analysis.
+- **Techniques**: Normalization methods like min-max scaling or z-score normalization are applied to enhance the comparability of different image datasets.
+- **Benefits**: Improves the effectiveness of machine learning algorithms by reducing the influence of data variability and enhancing model training convergence.
+

@@ -1,0 +1,69 @@
+# Techniques for Change Detection in Satellite Images
+
+**1. Image Differencing**:
+- **Definition**: Subtract pixel values of one image from another taken at different times.
+- **Process**:
+  - Align images using geometric correction.
+  - Calculate difference for each pixel.
+  - Apply threshold to identify significant changes.
+- **Use Case**: Quick and simple change detection like disaster impact assessment.
+
+**2. Image Ratioing**:
+- **Definition**: Divide pixel values of one image by the corresponding pixel values of another.
+- **Process**:
+  - Ratio each pixel value from one image with the corresponding pixel value from the other.
+  - Highlight areas with significant ratio differences.
+- **Use Case**: Detect subtle changes in vegetation or water bodies.
+
+**3. Change Vector Analysis (CVA)**:
+- **Definition**: Measure the magnitude and direction of changes in pixel vectors in a multi-spectral space.
+- **Process**:
+  - Calculate the change vector for each pixel.
+  - Analyze the magnitude and direction of these vectors.
+- **Use Case**: Detailed analysis of multi-spectral changes, such as land cover change.
+
+**4. Principal Component Analysis (PCA)**:
+- **Definition**: Reduce dimensionality of data and highlight change by transforming the data to principal components.
+- **Process**:
+  - Combine multi-temporal images into a single dataset.
+  - Apply PCA to transform the data.
+  - Identify changes using principal components.
+- **Use Case**: Extract significant changes from noisy data.
+
+**5. Post-classification Comparison**:
+- **Definition**: Classify each image independently and then compare the classifications.
+- **Process**:
+  - Classify each image into different land cover classes.
+  - Compare classifications to identify changes.
+- **Use Case**: Detailed land use and land cover change detection.
+
+**6. Multi-temporal Composite Analysis**:
+- **Definition**: Combine multiple images over time to detect changes.
+- **Process**:
+  - Create composite images from multiple time periods.
+  - Analyze composites for changes over time.
+- **Use Case**: Seasonal changes and long-term environmental monitoring.
+
+**7. Machine Learning Techniques**:
+- **Random Forest, Support Vector Machine (SVM)**:
+  - Train classifiers on labeled change and no-change areas.
+  - Predict changes on new images.
+- **Deep Learning (CNN, RNN)**:
+  - Use deep learning models to learn complex patterns and changes.
+  - Apply models to detect changes automatically.
+- **Use Case**: High-accuracy change detection in complex environments.
+
+**8. Normalized Difference Vegetation Index (NDVI) Differencing**:
+- **Definition**: Use NDVI to monitor vegetation changes.
+- **Process**:
+  - Calculate NDVI for images from different times.
+  - Subtract NDVI values to identify changes in vegetation.
+- **Use Case**: Agricultural monitoring and forest cover changes.
+
+**9. Object-based Change Detection**:
+- **Definition**: Detect changes based on image objects rather than individual pixels.
+- **Process**:
+  - Segment images into meaningful objects.
+  - Compare objects over time for changes.
+- **Use Case**: Urban development and infrastructure changes.
+

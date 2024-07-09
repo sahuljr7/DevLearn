@@ -36,6 +36,10 @@
     "title": "Daily",
     "type": "page"
   },
+  "deeplearning": {
+    "title": "Deep Learning",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {

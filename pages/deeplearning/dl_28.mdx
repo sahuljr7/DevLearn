@@ -1,0 +1,16 @@
+# Object detection algorithms (e.g., YOLO, SSD, Faster R-CNN)
+
+- **YOLO (You Only Look Once):**
+  - **Concept:** Single neural network predicts bounding boxes and class probabilities directly from full images.
+  - **Advantages:** Fast inference speed suitable for real-time applications. Handles multiple objects per image well.
+  - **Disadvantages:** May struggle with small objects due to its grid-based approach.
+
+- **SSD (Single Shot MultiBox Detector):**
+  - **Concept:** Similar to YOLO but uses multiple feature maps at different scales to detect objects.
+  - **Advantages:** Good balance between speed and accuracy. Handles objects of different sizes better than YOLO.
+  - **Disadvantages:** Can be slower than YOLO, especially with large numbers of object categories.
+
+- **Faster R-CNN (Region-based Convolutional Neural Network):**
+  - **Concept:** Two-stage detector: first proposes regions of interest (RoIs) and then classifies them.
+  - **Advantages:** State-of-the-art accuracy. Offers flexibility in handling various object sizes and shapes.
+  - **Disadvantages:** Slower than YOLO and SSD due to its two-stage architecture. More complex to implement and train.

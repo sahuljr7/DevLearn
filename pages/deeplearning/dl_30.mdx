@@ -1,0 +1,36 @@
+# Introduction to Change Detection
+
+**Change Detection Basics**:
+- **Definition**: Identifying changes in land cover, vegetation, urbanization, etc., over time using satellite images.
+- **Purpose**: Monitor environmental changes, urban development, deforestation, disaster assessment, etc.
+
+**Types of Change Detection**:
+1. **Bi-temporal Change Detection**: Comparing two images from different times.
+   - Example: Pre- and post-disaster images.
+2. **Multi-temporal Change Detection**: Analyzing multiple images over time.
+   - Example: Seasonal changes in vegetation.
+
+**Key Steps in Change Detection**:
+1. **Image Acquisition**: Obtain satellite images from sources like Sentinel-1, Sentinel-2, or Landsat.
+2. **Preprocessing**:
+   - **Radiometric Correction**: Adjust for sensor and atmospheric distortions.
+   - **Geometric Correction**: Align images to a common coordinate system.
+3. **Image Differencing**: Subtract pixel values of one image from another.
+   - **Thresholding**: Define a threshold to classify changes.
+4. **Post-classification Comparison**: Classify each image independently and compare the results.
+5. **Machine Learning Approaches**: Use algorithms like Random Forest, SVM, or deep learning models for more complex change detection tasks.
+
+**Challenges**:
+- **Noise and Disturbances**: Cloud cover, shadows, and seasonal variations can affect accuracy.
+- **Data Availability**: Frequent and high-resolution images are needed for detailed analysis.
+
+**Applications**:
+- **Environmental Monitoring**: Track changes in forests, wetlands, and water bodies.
+- **Urban Planning**: Observe urban expansion and infrastructure development.
+- **Disaster Management**: Assess impact and recovery after natural disasters like floods or earthquakes.
+- **Agriculture**: Monitor crop health, growth stages, and land use changes.
+
+**Tools and Techniques**:
+- **Remote Sensing Software**: Use tools like Google Earth Engine, QGIS, or ArcGIS.
+- **Deep Learning Models**: Apply advanced CNNs, RNNs, or transformers for precise change detection.
+
