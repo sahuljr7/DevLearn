@@ -40,6 +40,10 @@
     "title": "Deep Learning",
     "type": "page"
   },
+  "isro": {
+    "title": "ISRO",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {
