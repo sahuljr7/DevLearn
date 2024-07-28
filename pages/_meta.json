@@ -44,6 +44,14 @@
     "title": "ISRO",
     "type": "page"
   },
+  "research": {
+    "title": "Research",
+    "type": "page"
+  },
+  "railway": {
+    "title": "Railway",
+    "type": "page"
+  },
   "404": {
     "type": "page",
     "theme": {
